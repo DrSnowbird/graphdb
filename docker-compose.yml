@@ -1,0 +1,19 @@
+version: '3' 
+services:
+  graphdb:
+    image: openkbs/graphdb
+    build:
+      context: ./Dockerfile
+    container_name: graphdb
+    environment:
+      - GRAPHDB_PORT=${GRAPHDB_PORT:-7200}
+      - GRAPHDB_LOCAL_PORT=${GRAPHDB_LOCAL_PORT:-17200}
+    ports:
+#      - 17200:7200
+      - ${GRAPHDB_LOCAL_PORT}:${GRAPHDB_PORT}
+    env_file:
+      - ./docker.env
+    volumes:
+      - $HOME/data-docker/graphdb/data:/data
+      - $HOME/data-docker/graphdb/notebooks:/notebooks
+
