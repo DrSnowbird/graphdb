@@ -30,6 +30,6 @@
 
 By default, you can access GraphDB Workbench Web UI at
 ```
-http://0.0.0.0:17200/ or
+http://0.0.0.0:17200/(http://0.0.0.0:17200/) or
 http://<ip_address>:17200/
 ```
