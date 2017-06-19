@@ -2,7 +2,7 @@
 
 
 ## You need to get your own free download version for docker to build successfully
-- You can go to Ontotext web site to register to download the free version, **graphdb-free-8.1.1-dist.zip**
+- You can go to Ontotext web site to register to download the free version, **graphdb-free-8.1.1-dist.zip**, and place in this directory as shown below.
 - Then, you can use the build script and run script.
 ```
 .
