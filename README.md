@@ -2,8 +2,12 @@
 
 
 ## You need to get your own free download version for docker to build successfully
-- You can go to Ontotext web site to register to download the free version, **graphdb-free-8.1.1-dist.zip**, and place in this directory as shown below.
-- Then, you can use the build script and run script.
+- Default Docker build-arg is set to use 8.3.0 version. You can change that in "docker.env" file.
+```
+GRAPHDB_VERSION=8.4.0
+```
+- You can go to Ontotext web site to register to download the free version, **graphdb-free-8.3.0-dist.zip**, and place in this directory as shown below.
+- Then, you can use (build.sh: optional to build your own locally) run scripts to start using.
 ```
 .
 ├── build.sh
@@ -11,14 +15,14 @@
 ├── docker-compose.yml
 ├── docker.env
 ├── Dockerfile
-├── graphdb-free-8.1.1-dist.zip
-├── Makefile
+├── graphdb-free-8.3.0-dist.zip
+├── Makefile (not recommended to use this)
 ├── README.md
 └── run.sh
 
 ```
 
-# Build
+# Build (if you want to build your own image)
 ```
 ./build.sh
 ```
