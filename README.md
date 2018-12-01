@@ -1,4 +1,4 @@
-# GraphDB Free + Python 3 + Java 8 + Maven 3.5
+# GraphDB + Python 3 + Java 8 + Maven 3.5
 
 
 ## You need to get your own free download version for docker to build successfully
